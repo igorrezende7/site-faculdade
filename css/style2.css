@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-image: url('../images/campo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 30px;    
+}
+
+.box-game{
+    max-width: 900px;
+    margin: 0 auto;
+    max-height: 800px;
+    border: 10px solid rgb(8, 22, 145);
+    z-index: 1;
+    background-image: url('../images/fundo_quiz.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.center{
+   max-width: 800px;
+   margin: 0 auto;
+   max-height: 700px; 
+}
+.instructions{
+    position: relative;
+    z-index: 2;
+    width: 800px;
+    max-height: 700px;
+    color: white;
+}
+
+.text{
+ 
+    padding: 40px;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px black;
+    position: relative;
+
+}
+
+.button-start{
+    padding: 40px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    max-width: 50%;
+    display: inline-block;
+    float: center;
+}
+.button{
+    background-image: url('../images/bola.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    font-size: 50px;
+    border-radius: 50%;
+    border-color: black ;
+    background-color: white;
+    position: relative;
+    animation: pingando 2s ease infinite ;
+}
+
+
+.link_button{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    font-size: 100px;
+}
+
+.a{
+    position: relative;
+    float: right;
+    top: 100px;
+    display: inline-block;
+    max-width: 30%;
+    margin-right: -100px;
+}
+
+
+
+@keyframes pingando{
+    0%{transform: translateY(0));}
+    50%{transform: translateY(-50px)}
+    100%{transform: translateY(0)}
+
+}
